@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: corona
+    database: corona_virus
+    schema: raw
+    tables:
+      - name: cases
