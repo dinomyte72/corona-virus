@@ -1,8 +1,8 @@
 with stg_countries as (
-  select distinct
-    country_name,
+  select
+    REGEXP_REPLACE(country_name, '_', ' ', 'g') as country_name,
     country_code
   from {{source('corona', 'cases')}}
 )
 
-select * from stg_countries
+select distinct * from stg_countries
