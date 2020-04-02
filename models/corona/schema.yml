@@ -1,0 +1,35 @@
+version: 2
+
+models:
+    - name: stg_countries
+      description: "This SCD table stores all country information"
+      columns:
+      - name: country_name
+        description: "The full name of a country"
+        tests:
+            - unique
+            - not_null
+
+      - name: country_code
+        description: "The 2-letter country abbreviation"
+        tests:
+            - unique
+            - not_null
+
+    - name: fct_corona
+      description: "This table contains all COVID-19 facts (i.e. cases and deaths) by date and country"
+      columns:
+      - name: date
+        description: "The date of the fact"
+
+      - name: country_code
+        description: "The 2-letter country abbreviation"
+
+      - name: country_name
+        description: "The full name of a country"
+
+      - name: cases
+        description: "The number of COVID-19 cases"
+
+      - name: deaths
+        description: "The number of COVID-19 deaths"
