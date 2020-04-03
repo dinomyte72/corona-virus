@@ -20,7 +20,6 @@ models:
       description: "This table contains all COVID-19 facts (i.e. cases and deaths) by date and country"
       columns:
       - name: date
-<<<<<<< HEAD
         description: "The date of the fact"
 
       - name: country_code
@@ -28,15 +27,6 @@ models:
 
       - name: country_name
         description: "The full name of a country"
-=======
-        description: "The full name of a country"
-
-      - name: country_code
-        description: ""
-
-      - name: country_name
-        description: "The 2-letter country abbreviation"
->>>>>>> 455b439e46d0a71c122146f845b203d88164561a
 
       - name: cases
         description: "The number of COVID-19 cases"
