@@ -5,4 +5,4 @@ sources:
     database: corona_virus
     schema: raw
     tables:
-      - name: cases
+      - name: cases2

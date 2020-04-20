@@ -6,7 +6,7 @@ with facts as (
     population_2018 as population,
     cases,
     deaths
-  from {{source('corona', 'cases')}}
+  from {{source('corona', 'cases2')}}
 )
 
 select
